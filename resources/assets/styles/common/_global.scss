@@ -1,0 +1,45 @@
+* {
+  font-family: "Bai Jamjuree", Arial, sans-serif;
+}
+
+html, body {
+  overflow-x: hidden;
+}
+
+.container-custom-max-width {
+  @media (min-width: 1400px) {
+    max-width: 1360px !important;
+  }
+
+  @media (min-width: 1700px) {
+    max-width: 1600px;
+  }
+}
+
+textarea.form-control {
+  overflow-y: auto;
+
+  &::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: $dark-1;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: #ffffff;
+    border-radius: 10px;
+    border: 2px solid $dark-1;
+  }
+
+  &::-webkit-scrollbar-button {
+    display: none;
+  }
+}
+
+input:-webkit-autofill {
+  background-color: transparent !important;
+  -webkit-box-shadow: 0 0 0 1000px transparent inset !important;
+  -webkit-text-fill-color: inherit !important;
+}

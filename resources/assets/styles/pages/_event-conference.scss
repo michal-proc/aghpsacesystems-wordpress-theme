@@ -1,0 +1,106 @@
+.event-conference-image {
+  width: 100%;
+  margin: 0 auto;
+  background-color: $dark-1;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.7);
+  position: relative;
+
+  img {
+    width: 100%;
+    object-fit: contain;
+  }
+}
+
+.event-conference {
+  &-title {
+    font-family: "Bai Jamjuree Light", "Bai Jamjuree", Arial, sans-serif;
+    color: $white-1;
+    font-weight: 400;
+    font-size: 3.4rem;
+    margin: 6rem 0;
+  }
+
+  &-map {
+    background-color: $white-1;
+    border-radius: 0 60px 60px 0;
+    padding: 0 !important;
+    margin-bottom: 3.5rem;
+    line-height: 0.8 !important;
+
+    iframe {
+      border-radius: 0 60px 60px 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &-place-and-date {
+    background-color: $white-1;
+    padding: 2.3rem 1rem;
+    text-align: center;
+    letter-spacing: -0.25px;
+    justify-content: flex-end;
+    align-items: flex-end;
+    border-radius: 60px 0 0 60px;
+    margin-bottom: 3.5rem;
+    height: fit-content;
+
+    h3 {
+      font-size: 2.25rem;
+      font-weight: 400;
+      color: $dark-2;
+      margin-bottom: 0;
+    }
+  }
+
+  &-content {
+    &-image {
+      width: 100%;
+      margin-top: 4.5rem !important;
+
+      img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 3px;
+        box-shadow: 0 0 15px 1px rgba(255, 255, 255, 0.3);
+        transition: 0.3s ease !important;
+
+        &:hover {
+          box-shadow: 0 0 15px 3.5px rgba(255, 255, 255, 0.3);
+        }
+      }
+    }
+  }
+
+  &-links {
+    margin-top: 1rem !important;
+    margin-bottom: 3.5rem;
+
+    h3 {
+      color: #fff;
+      text-transform: uppercase;
+      font-weight: 400;
+      font-family: "Bai Jamjuree Light", "Bai Jamjuree", Arial, sans-serif;
+      font-size: 1.65rem;
+    }
+  }
+
+  &-gallery {
+    margin-top: 3rem !important;
+    margin-bottom: 9rem;
+
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      border-radius: 3px;
+      box-shadow: 0 0 15px 1px rgba(255, 255, 255, 0.3);
+      transition: 0.3s ease !important;
+
+      &:hover {
+        box-shadow: 0 0 15px 3.5px rgba(255, 255, 255, 0.3);
+      }
+    }
+  }
+}

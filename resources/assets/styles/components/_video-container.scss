@@ -1,0 +1,50 @@
+.video-container {
+  width: 100%;
+  margin: 0 auto;
+  background-color: $dark-1;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.7);
+  position: relative;
+
+  video {
+    width: 100%;
+    height: auto;
+  }
+
+  .vjs-control-bar {
+    background: $dark-1;
+    bottom: -1px !important;
+  }
+
+  .vjs-big-play-button {
+    background-color: transparent;
+    border: 3px solid #ffffff;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    line-height: 44px;
+    font-size: 35px;
+    color: #ffffff;
+    opacity: 0.9;
+    transition: background-color 0.3s ease, color 0.3s ease, opacity 0.3s ease !important;
+
+    &:hover {
+      background-color: #ffffff;
+      color: $dark-1;
+      opacity: 1;
+      transition: background-color 0.3s ease, color 0.3s ease, opacity 0.3s ease !important;
+    }
+  }
+
+  .vjs-progress-holder {
+    background: $dark-2;
+  }
+
+  .vjs-volume-bar {
+    background: $dark-2;
+  }
+
+  .vjs-fullscreen-control {
+    color: #ffffff;
+  }
+}
+

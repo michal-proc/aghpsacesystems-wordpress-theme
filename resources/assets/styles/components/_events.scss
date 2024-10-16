@@ -1,0 +1,119 @@
+$single-event-triangle: 40px;
+$small-single-event-triangle: 30px;
+$extra-small-single-event-triangle: 20px;
+
+.events {
+  position: absolute;
+  z-index: 1000;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding-top: 0.8rem;
+
+  .single-event {
+    display: flex;
+    align-items: stretch;
+    margin-bottom: 1rem;
+    max-width: $single-event-triangle;
+    transition: 0.3s !important;
+    filter: drop-shadow(0px 0px 0.35rem #333);
+
+    @media (max-width: 600px) {
+      max-width: $small-single-event-triangle;
+    }
+
+    @media (max-width: 420px) {
+      max-width: $extra-small-single-event-triangle;
+    }
+
+    &:hover {
+      max-width: 100%;
+      filter: drop-shadow(0px 0px 0.45rem #333);
+
+      &-content {
+        padding: 10px;
+      }
+    }
+
+    &.expand {
+      max-width: 100%;
+      filter: drop-shadow(0px 0px 0.45rem #333);
+
+      &-content {
+        padding: 10px;
+      }
+    }
+
+    &-left {
+      cursor: pointer;
+      width: 0;
+      border-top: $single-event-triangle solid transparent;
+      border-bottom: $single-event-triangle solid transparent;
+      border-right: $single-event-triangle solid rgba(255,255,255,0.8);
+
+      @media (max-width: 600px) {
+        border-top: $small-single-event-triangle solid transparent;
+        border-bottom: $small-single-event-triangle solid transparent;
+        border-right: $small-single-event-triangle solid rgba(255,255,255,0.8);
+      }
+
+      @media (max-width: 420px) {
+        border-top: $extra-small-single-event-triangle solid transparent;
+        border-bottom: $extra-small-single-event-triangle solid transparent;
+        border-right: $extra-small-single-event-triangle solid rgba(255,255,255,0.8);
+      }
+    }
+
+    &-content {
+      flex: 1;
+      background-color: rgba(255,255,255,0.8);
+      color: #222;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-decoration: none !important;
+      padding: 0;
+
+      p {
+        white-space: nowrap;
+        text-transform: uppercase;
+        padding: 0 15px 0 0;
+        margin: 0;
+      }
+
+      p.bigger {
+        font-weight: 700;
+        font-family: "Bai Jamjuree Bold", "Bai Jamjuree", Arial, sans-serif;
+        font-size: 1.17rem;
+        border-bottom: 2px solid #999;
+        border-radius: 2px;
+
+        @media (max-width: 600px) {
+          font-size: 0.8rem;
+        }
+
+        @media (max-width: 420px) {
+          font-size: 0.7rem;
+        }
+      }
+
+      p.smaller {
+        padding-top: 1%;
+        font-weight: 300;
+        font-family: "Bai Jamjuree Light", "Bai Jamjuree", Arial, sans-serif;
+        font-size: 0.8rem;
+
+        @media (max-width: 600px) {
+          font-size: 0.5rem;
+        }
+
+        @media (max-width: 420px) {
+          font-size: 0.45rem;
+        }
+      }
+    }
+  }
+}

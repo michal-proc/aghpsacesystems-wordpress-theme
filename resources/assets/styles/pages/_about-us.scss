@@ -1,0 +1,53 @@
+.about-us {
+  &-header-circle {
+    margin-top: 11rem;
+    margin-bottom: 9rem;
+
+    &-inside {
+      width: 13rem;
+      height: 13rem;
+    }
+  }
+
+  &-section-circle {
+    &-inside {
+      width: 19.3rem;
+      height: 19.3rem;
+
+      h1 {
+        font-weight: 600;
+        font-size: 2.6rem;
+      }
+    }
+  }
+
+  &-description {
+    font-size: 1.25rem;
+    letter-spacing: 1px;
+    line-height: 1.5;
+    color: $white-1;
+    font-weight: 500;
+
+    p {
+      max-width: 75%;
+
+      @media (max-width: 1500px) {
+        max-width: 63%;
+      }
+
+      @media (max-width: 992px) {
+        max-width: 85%;
+      }
+
+      @media (max-width: 600px) {
+        max-width: 90%;
+      }
+    }
+  }
+
+  canvas {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    width: 100%;
+  }
+}

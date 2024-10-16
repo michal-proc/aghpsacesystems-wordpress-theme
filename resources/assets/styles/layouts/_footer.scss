@@ -1,0 +1,31 @@
+.footer {
+  background-color: $dark-1;
+  border-top: 1px solid $white-opacity-1;
+
+  div.container {
+    padding-top: 1.3rem;
+    padding-bottom: 1.3rem;
+  }
+
+  a {
+    text-decoration: none !important;
+  }
+
+  .gray-text {
+    color: rgb(187, 187, 187)
+  }
+
+  .footer-brand {
+    margin-bottom: 1.2rem;
+
+    img {
+      height: 4rem;
+    }
+  }
+
+  .additional-padding-footer-links {
+    @media (min-width: 992px) {
+      padding-left: 25%;
+    }
+  }
+}

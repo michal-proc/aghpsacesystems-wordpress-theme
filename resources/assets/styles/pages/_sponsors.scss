@@ -1,0 +1,208 @@
+.sponsors-content {
+  margin-top: 4rem;
+  color: $white-1;
+
+  &-card {
+    background: $dark-2;
+    box-shadow: 4px 3px 28px 0 rgba(0, 0, 0, 0.25);
+    padding: 22px;
+    border-radius: 20px;
+    margin-bottom: 3rem;
+
+    @media (max-width: 600px) {
+      margin-left: 15px;
+      margin-right: 15px;
+    }
+
+    h1 {
+      font-weight: 400;
+      line-height: 1.8rem;
+      letter-spacing: -0.015em;
+      font-size: 3rem;
+
+      @media (max-width: 600px) {
+        line-height: 1.5;
+        font-size: 2.65rem;
+      }
+    }
+
+    &-content {
+      h2, h3, h4, h5, h6 {
+        margin: 2rem 0 1rem;
+        text-transform: uppercase;
+        font-weight: 500;
+        line-height: 1.8rem;
+        letter-spacing: -0.022em;
+        font-size: 1.2rem;
+      }
+
+      p {
+        font-weight: 400;
+        line-height: 1.5;
+        text-align: left;
+        font-size: 1rem;
+      }
+    }
+
+    &-icon {
+      transition: transform 0.3s ease !important;
+
+      &:hover {
+        transform: scale(1.1);
+        filter: brightness(0.9);
+      }
+    }
+  }
+
+  &-pills {
+    padding-top: 3.5rem !important;
+
+    @media (min-width: 992px) {
+      padding-left: 1.5rem !important;
+      padding-right: 1.5rem !important;
+    }
+
+    &-heading {
+      text-transform: uppercase;
+      font-weight: 500;
+      line-height: 1.8rem;
+      letter-spacing: -0.022em;
+      font-size: 1.2rem;
+      margin-bottom: 25px;
+    }
+
+    &-pills {
+      display: flex;
+      justify-content: space-between !important;
+      flex-wrap: wrap;
+      align-items: flex-start;
+
+      .pill {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $dark-2;
+        color: $white-1;
+        box-shadow: 4px 3px 28px 0 rgba(0, 0, 0, 0.25);
+        text-align: center;
+        writing-mode: vertical-rl;
+        transform: rotate(180deg);
+        font-size: 1.73rem;
+        line-height: 1.2;
+        text-transform: uppercase;
+        width: 18%;
+        height: 220px;
+        outline: none;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s ease, height 0.4s ease, margin-top 0.4s ease, padding-top 0.4s ease !important;
+
+        &.additional-margin-top {
+          margin-top: 40px;
+
+          @media (max-width: 992px) {
+            margin-top: 30px;
+          }
+        }
+
+        &:hover {
+          background-color: lighten($dark-2, 5%);
+          height: 260px;
+          margin-top: 0 !important;
+
+          @media (max-width: 992px) {
+            height: 250px;
+          }
+        }
+
+        &:active {
+          background-color: lighten($dark-2, 10%);
+        }
+
+        &.left {
+          border-radius: 0 0 60px 60px;
+        }
+
+        &.right {
+          border-radius: 60px 60px 0 0;
+        }
+      }
+    }
+
+    &-description {
+      margin-top: 0.6rem;
+      padding-top: 0.4rem;
+      font-weight: 400;
+      line-height: 1.5;
+      text-align: left;
+      font-size: 1rem;
+      opacity: 0;
+      transform: translateY(-20px);
+      transition: all 0.4s ease-in-out !important;
+      min-height: 120px;
+
+      &.visible {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  }
+}
+
+.sponsors-container {
+  position: relative;
+  min-height: calc(7.5vh + 5px);
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 62vw;
+    height: 62vw;
+    background: url('/images/pages/sponsors-eclipse.png') no-repeat center;
+    background-size: contain;
+    z-index: -1;
+
+    @media (max-width: 992px) {
+      width: 75vw;
+      height: 75vw;
+    }
+  }
+
+  .slider-container {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.4);
+    min-height: 7.5vh;
+
+    .slick-slider {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .slick-track {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .slick-slide {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 5px;
+      }
+
+      img {
+        width: 100% !important;
+        height: 100% !important;
+        transition: transform 0.3s ease !important;
+        transform: scale(0.9);
+
+        &:hover {
+          transform: scale(1);
+        }
+      }
+    }
+  }
+}

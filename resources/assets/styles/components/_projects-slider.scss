@@ -1,0 +1,102 @@
+$margin-between-slides: 1rem;
+
+.container-projects-slider {
+  @media (min-width: 992px) {
+    max-width: 98% !important;
+  }
+}
+
+.projects-slider {
+  width: 100%;
+  height: auto;
+  margin-top: 5rem;
+  margin-bottom: 1rem;
+  padding: 0 0.5rem;
+
+  .slick-track {
+    display: flex;
+    margin: 15px 0;
+    justify-content: center;
+  }
+
+  .slick-slide {
+    display: flex;
+    height: auto;
+    padding-left: $margin-between-slides;
+    padding-right: $margin-between-slides;
+    flex: 1;
+
+    div {
+      height: 100%;
+    }
+  }
+
+  .slick-arrow {
+    height: 48px !important;
+    width: 29px !important;
+    filter: drop-shadow(1px 1px 1px #ccc);
+    top: calc(50% - 34px); // Calc half of button height + 10px (bottom slick-track)
+
+    &:before {
+      content: '';
+    }
+  }
+
+  .slick-prev {
+    background-image: url("./../../images/icons/slider-arrow-left.svg");
+    left: -15px;
+  }
+
+  .slick-next {
+    background-image: url("./../../images/icons/slider-arrow-right.svg");
+    right: -15px;
+  }
+
+  &-slide {
+    position: relative;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 3px;
+
+      box-shadow: 0 0 12px 0.5px rgba(255, 255, 255, 0.3);
+      transition: 0.3s ease !important;
+
+      &:hover {
+        box-shadow: 0 0 12px 2px rgba(255, 255, 255, 0.3);
+      }
+    }
+
+    &-content {
+      position: absolute;
+      left: 35px;
+      bottom: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      pointer-events: none;
+
+      &-title {
+        font-family: "Bai Jamjuree Light", "Bai Jamjuree", Arial, sans-serif;
+        color: #fff;
+        font-weight: 400;
+        letter-spacing: 0.4px;
+        font-size: 2.1rem;
+      }
+
+      &-button {
+        width: 100%;
+        height: fit-content !important;
+        pointer-events: all !important;
+
+        a {
+          scale: 0.75;
+          transform-origin: left center;
+          border: 3px $yellow-1 solid !important;
+        }
+      }
+    }
+  }
+}

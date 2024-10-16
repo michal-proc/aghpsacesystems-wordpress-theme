@@ -1,0 +1,30 @@
+.shadow-circle {
+  padding-bottom: 18px;
+  padding-right: 18px;
+  width: fit-content;
+  margin: 0 auto;
+  background-color: $white-2;
+  border-radius: 50%;
+  box-shadow: 0 0 45px $white-opacity-1;
+  transition: 0.3s ease !important;
+  overflow: auto;
+
+  &-inside {
+    background-color: $white-1;
+    border-radius: 50%;
+
+    h1 {
+      padding-top: 10px;
+      padding-left: 10px;
+      font-family: "Bai Jamjuree Bold", "Bai Jamjuree", Arial, sans-serif;
+      font-size: 3.2rem;
+      font-weight: 600;
+      letter-spacing: -1.5px;
+      color: $dark-2;
+    }
+  }
+
+  &:hover {
+    box-shadow: 0 0 75px $white-opacity-1;
+  }
+}

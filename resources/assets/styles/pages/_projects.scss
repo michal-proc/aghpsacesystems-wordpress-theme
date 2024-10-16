@@ -1,0 +1,18 @@
+.explore-section {
+  padding: 3rem 15px;
+  gap: 10px;
+  margin-bottom: 9rem;
+
+  h2 {
+    color: $white-1;
+    font-weight: 400;
+    font-size: 3.3rem;
+    margin-bottom: 2rem;
+  }
+
+  .explore-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+}

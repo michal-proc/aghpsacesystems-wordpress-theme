@@ -1,0 +1,156 @@
+$circle-size: 7.5rem;
+
+.achievement-modal {
+  border-radius: 12px;
+  padding: 0 !important;
+  background-color: $dark-3;
+  position: relative;
+
+  &-close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 11px;
+    height: 11px;
+  }
+
+  &-image {
+    width: 100%;
+
+    img {
+      max-width: 100%;
+      width: 100%;
+      max-height: 50vh;
+      object-fit: cover;
+      border-radius: 12px 12px 0 0;
+
+      @media (max-width: 992px) {
+        max-height: 65vh;
+      }
+    }
+  }
+
+  &-content {
+    color: white;
+    box-shadow: 4px 3px 28px 0 rgba(0, 0, 0, 0.25);
+
+    &-name {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: -4.6rem;
+      max-width: 90%;
+      margin-left: auto;
+      margin-right: auto;
+
+      &-event {
+        padding: 15px 50px 15px 25px;
+        background-color: $dark-2;
+        text-align: center;
+        line-height: 2.02rem;
+        font-weight: 400;
+        height: fit-content;
+        margin: 0;
+        font-size: 1.75rem;
+        max-width: calc(100% - 7.5rem);
+      }
+
+      &-position {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: $circle-size;
+        width: $circle-size;
+        border-radius: 50%;
+        background-color: $white-1;
+        margin-left: -25px;
+
+        * {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 100%;
+          height: 100%;
+          border-radius: 50%;
+          font-size: 3.6rem;
+          font-family: "Bai Jamjuree Light", "Bai Jamjuree", Arial, sans-serif;
+          font-weight: 300;
+        }
+
+        .gold {
+          border: 4px solid rgba(223, 174, 36, 1);
+          color: rgba(223, 174, 36, 1);
+          box-shadow: 0 0 35px 0 rgba(223, 174, 36, 1);
+          background-color: rgba(223, 174, 36, 0.1);
+        }
+
+        .silver {
+          border: 4px solid rgba(192, 192, 192, 1);
+          color: rgba(192, 192, 192, 1);
+          box-shadow: 0 0 35px 0 rgba(192, 192, 192, 1);
+          background-color: rgba(192, 192, 192, 0.1);
+        }
+
+        .bronze {
+          border: 4px solid rgba(187, 151, 109, 1);
+          color: rgba(187, 151, 109, 1);
+          box-shadow: 0 0 35px 0 rgba(187, 151, 109, 1);
+          background-color: rgba(187, 151, 109, 0.1);
+        }
+
+        .other {
+          border: 4px solid rgba(101, 118, 148, 1);
+          color: rgba(101, 118, 148, 1);
+          box-shadow: 0 0 35px 0 rgba(101, 118, 148, 1);
+          background-color: rgba(101, 118, 148, 0.1);
+        }
+      }
+    }
+
+    &-description {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+
+      p {
+        max-width: 80%;
+        font-weight: 300;
+
+        @media (max-width: 992px) {
+          max-width: 92.5%;
+        }
+      }
+
+      div.description {
+        padding-top: 1rem;
+        display: flex;
+        justify-content: center;
+
+        p {
+          font-size: 1.03rem;
+          letter-spacing: 0.5px;
+        }
+      }
+
+      p.place-and-date {
+        font-size: 0.96rem;
+        letter-spacing: 0.25px;
+      }
+    }
+  }
+}
+
+// Overwrite bootstrap given styles
+.modal {
+  padding-right: 0 !important;
+}
+
+.modal-dialog {
+  min-width: 65%;
+}
+
+.modal-open {
+  overflow: visible;
+  padding-right: 0 !important;
+}

@@ -1,0 +1,47 @@
+@import "common/variables";
+@import "common/fonts";
+@import "common/global";
+
+/** Import everything from autoload */
+@import "./autoload/**/*";
+
+/**
+ * Import npm dependencies
+ *
+ * Prefix your imports with `~` to grab from node_modules/
+ * @see https://github.com/webpack-contrib/sass-loader#imports
+ */
+@import "~video.js/dist/video-js.css";
+@import "~slick-carousel/slick/slick";
+@import "~slick-carousel/slick/slick-theme";
+@import "~aos/dist/aos.css";
+
+/** Import theme styles */
+@import "components/header";
+@import "components/buttons";
+@import "components/background-absolute";
+@import "components/scroll-to-up";
+@import "components/project-view";
+@import "components/section-view";
+@import "components/events";
+@import "components/page-heading";
+@import "components/shadow-circle";
+@import "components/achievement-modal";
+@import "components/projects-slider";
+@import "components/video-container";
+@import "layouts/header";
+@import "layouts/footer";
+
+/** Import page styles */
+@import "pages/projects";
+@import "pages/contact";
+@import "pages/join-us";
+@import "pages/our-achievements";
+@import "pages/about-us";
+@import "pages/sponsors";
+@import "pages/single-project";
+@import "pages/event-conference";
+@import "pages/404-page";
+
+/** Import custom Wordpress elements styles */
+@import "wordpress/wordpress";

@@ -1,0 +1,23 @@
+/** Import Bootstrap functions */
+@import "~bootstrap/scss/functions";
+
+$dark-1: #10121f;
+$dark-2: #111f3c;
+$dark-2-hover: #1c2f48;
+$dark-3: rgba(27, 44, 78, 1);
+
+$yellow-1: rgba(223, 174, 36, 1);
+
+$dark-gradient: linear-gradient(180deg, #10121e 0%, #151d4b 65%, #095778 85%, #2A789C 100%);
+
+$white-1: rgba(249, 249, 249, 1);
+$white-2: rgba(217, 217, 217, 1);
+$white-opacity-1: rgba(243, 245, 250, 0.2);
+$white-opacity-2: rgba(255, 255, 255, 0.6);
+$white-opacity-3: rgba(249, 249, 249, 0.5);
+
+$gray-1: rgba(159, 163, 182, 1);
+
+/** Bootstrap navbar fix (https://git.io/fADqW) */
+$navbar-dark-toggler-icon-bg: none;
+$navbar-light-toggler-icon-bg: none;

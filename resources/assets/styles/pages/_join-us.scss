@@ -1,0 +1,119 @@
+.join-us {
+  &-short-text {
+    font-size: 1.25rem;
+    letter-spacing: 1px;
+    line-height: 1.5;
+    color: $white-1;
+    font-weight: 500;
+    margin: 1.9rem 0;
+
+    @media (max-width: 600px) {
+      padding-left: 1rem;
+    }
+  }
+
+  &-step {
+    margin-bottom: 2rem;
+
+    &-description {
+      font-size: 1.25rem;
+      letter-spacing: 1px;
+      line-height: 1.5;
+      color: $white-1;
+      font-weight: 500;
+    }
+
+    &-title {
+      background-color: $white-1;
+      padding: 2.3rem 0;
+      text-align: center;
+      letter-spacing: -0.25px;
+
+      &.recruitment {
+        margin: 3rem 0;
+
+        &.align-left {
+          margin-right: 1rem !important;
+        }
+
+        &.align-right {
+          margin-left: 1rem !important;
+        }
+
+        @media (max-width: 600px) {
+          margin: 2rem 0;
+        }
+      }
+
+      &.align-left {
+        justify-content: flex-start;
+        align-items: flex-start;
+        border-radius: 0 60px 60px 0;
+      }
+
+      &.align-right {
+        justify-content: flex-end;
+        align-items: flex-end;
+        border-radius: 60px 0 0 60px;
+      }
+
+      h3 {
+        font-size: 2.25rem;
+        font-weight: 400;
+        color: $dark-2;
+        margin-bottom: 0;
+      }
+
+      h4 {
+        font-size: 1.8rem;
+        font-weight: 500;
+        color: $dark-2;
+        margin-bottom: 0;
+      }
+    }
+
+    &-text {
+      padding: 2.2rem 5.9rem;
+      text-align: left;
+
+      @media (max-width: 600px) {
+        padding: 1.8rem 0.5rem;
+      }
+
+      p {
+        font-size: 1.25rem;
+        letter-spacing: 0.8px;
+        line-height: 1.55;
+        color: $white-1;
+        font-weight: 400;
+        max-width: 1000px;
+
+        @media (max-width: 600px) {
+          font-size: 1.15rem;
+          line-height: 1.35;
+        }
+      }
+    }
+  }
+
+  &-row-recruitment {
+    padding: 2.8rem 6rem;
+  }
+
+  &-buttons {
+    margin-bottom: 9rem;
+  }
+}
+
+// Set elements positions
+.row {
+  &.align-left {
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  &.align-right {
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
+}

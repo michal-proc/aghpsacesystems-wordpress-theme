@@ -1,0 +1,137 @@
+.contact-form-section {
+  width: 42.5%;
+  margin-top: -2rem;
+  padding-left: 3.2rem;
+  padding-bottom: 2rem;
+
+  @media (max-width: 1100px) {
+    width: 60%;
+  }
+
+  @media (max-width: 992px) {
+    width: 100%;
+    padding: 0 1rem;
+  }
+
+  // Hide Contact Form 7
+  .wpcf7-form {
+    display: none !important;
+  }
+
+  .contact-form {
+    .form-floating {
+      position: relative;
+      margin-bottom: 2.25rem;
+
+      .form-control {
+        background-color: transparent;
+        border: none;
+        border-bottom: 2px solid $white-1;
+        border-radius: 0;
+        color: $white-1;
+        font-size: 1.3rem;
+        line-height: 1.5rem;
+        box-shadow: none;
+        resize: none;
+        margin-bottom: 0.65rem;
+        padding: 0.6rem 0 0.6rem 0.05rem;
+
+        &:focus {
+          box-shadow: none;
+          border-color: lighten($white-1, 10%);
+        }
+      }
+
+      textarea.form-control {
+        height: auto;
+        min-height: 120px;
+      }
+
+      label {
+        color: #b0b0b0;
+        font-size: 1.3rem;
+        margin-bottom: 0 !important;
+        line-height: 1.5rem;
+        position: absolute;
+        top: 0.6rem;
+        left: 0;
+        pointer-events: none;
+        transition: all 0.2s ease-in-out !important;
+
+        &.floating-label {
+          top: -1.4rem;
+          font-size: 1.15rem;
+        }
+      }
+
+      .form-control:focus + label,
+      .form-control:not(:placeholder-shown) + label {
+        @extend .floating-label;
+      }
+    }
+  }
+
+  .contact-icons {
+    color: $white-1;
+    margin-top: 1.2rem;
+    margin-bottom: 5rem;
+
+    @media (max-width: 992px) {
+      margin-bottom: 4rem;
+    }
+
+    p {
+      font-size: 1.05rem;
+      letter-spacing: 1px;
+    }
+
+    a {
+      img {
+        width: 22px;
+        height: 22px;
+        transition: transform 0.3s ease !important;
+
+        @media (max-width: 1150px) {
+          width: 18px;
+          height: 18px;
+        }
+
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+    }
+
+    .email-link {
+      gap: 10px;
+      text-decoration: none !important;
+      color: $white-1;
+      font-size: 1rem;
+      font-weight: 550;
+      letter-spacing: 1.3px;
+    }
+  }
+}
+
+.contact-map-image {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  z-index: -1;
+  width: 57.5%;
+  object-fit: cover;
+  clip-path: polygon(18% 0, 100% 0, 100% 100%, 0% 100%);
+
+  @media (max-width: 1100px) {
+    width: 40%;
+  }
+
+  @media (max-width: 992px) {
+    position: static;
+    width: 100%;
+    clip-path: none;
+    height: auto;
+    max-height: 50vh;
+  }
+}

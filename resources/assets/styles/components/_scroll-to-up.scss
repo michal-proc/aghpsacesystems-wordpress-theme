@@ -1,0 +1,47 @@
+.scroll-to-up {
+  position: fixed;
+  width: fit-content;
+  padding-bottom: 6px;
+  padding-right: 6px;
+  border-radius: 50px;
+  background-color: $white-2;
+  z-index: 999;
+  bottom: 25px;
+  right: 25px;
+  outline: none;
+  border: 0;
+  box-shadow: 1px 1px 20px 0 rgba(240, 240, 240, 0.2);
+  transition: transform 0.3s ease, opacity 0.3s ease, box-shadow 0.3s ease;
+  opacity: 0;
+  cursor: pointer;
+  overflow: auto;
+
+  &-inside {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $white-1;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+  }
+
+  &.show {
+    opacity: 1;
+  }
+
+  img {
+    transition: transform 0.3s ease;
+    padding-left: 3px;
+    padding-top: 3px;
+  }
+
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 2px 2px 30px 0 rgba(240, 240, 240, 0.25);
+
+    img {
+      transform: translateY(-4px);
+    }
+  }
+}
