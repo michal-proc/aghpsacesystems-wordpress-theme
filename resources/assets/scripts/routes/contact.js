@@ -9,6 +9,7 @@ export default {
 
       const contactForm7 = document.querySelector('.wpcf7-form');
       contactForm7.querySelector('input[name="contact-name"]').value = document.getElementById('contactFormNotToSendName').value;
+      contactForm7.querySelector('input[name="contact-company"]').value = document.getElementById('contactFormNotToSendCompany').value;
       contactForm7.querySelector('input[name="contact-email"]').value = document.getElementById('contactFormNotToSendEmail').value;
       contactForm7.querySelector('textarea[name="contact-message"]').value = document.getElementById('contactFormNotToSendMessage').value;
       contactForm7.submit();

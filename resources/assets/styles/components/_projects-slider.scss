@@ -15,12 +15,13 @@ $margin-between-slides: 1rem;
 
   .slick-track {
     display: flex;
-    margin: 15px 0;
+    margin: 15px auto;
     justify-content: center;
   }
 
   .slick-slide {
     display: flex;
+    justify-content: center;
     height: auto;
     padding-left: $margin-between-slides;
     padding-right: $margin-between-slides;

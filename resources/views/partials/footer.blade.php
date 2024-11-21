@@ -24,7 +24,7 @@
         </ul>
       </div>
       <div class="col-12 col-lg-2 mb-3">
-        <p class="gray-text">Śledź AGH Space Systems</p>
+        <p class="gray-text">Obserwuj AGH Space Systems</p>
         <div class="d-flex">
           <a class="mr-3" href="{{ get_field('social_media_facebook', 'option') }}" target="_blank">
             <img src="@asset('images/icons/facebook.svg')" alt="Facebook">
